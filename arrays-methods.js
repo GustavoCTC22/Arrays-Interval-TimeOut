@@ -25,31 +25,51 @@ console.log(numeros);
 // Ejercicio 2: Eliminar Elementos
 // 1. Crea un arreglo llamado `colores` con los valores "rojo", "verde" y "azul".
 // 2. Usa el método `pop` para eliminar el último elemento del arreglo.
+const colores = ["rojo", "verde", "azul"];
+colores.pop();
+console.log(colores);
 
 // Ejercicio 3: Acceder a Elementos
 // 1. Crea un arreglo llamado `frutas` con los valores "manzana", "banana" y "cereza".
 // 2. Accede al segundo elemento del arreglo y guárdalo en una variable llamada `segundaFruta`.
-
+const frutas = ["manzana", "banana", "cereza"];
+const segundaFruta = frutas[1];
+console.log(segundaFruta);
 // Ejercicio 4: Encontrar la Longitud
 // 1. Crea un arreglo llamado `animales` con los valores "perro", "gato", "conejo" y "tortuga".
 // 2. Usa la propiedad `length` para encontrar la cantidad de elementos en el arreglo y guárdalo en una variable llamada `numeroDeAnimales`.
-
+const animales = ["perro", "gato", "conejo", "tortuga"];
+const numeroDeAnimales = animales.length;
+console.log("animales:", animales);
+console.log("numeroDeAnimales", numeroDeAnimales);
 // Ejercicio 5: Eliminar el Primer Elemento
 // 1. Crea un arreglo llamado `paises` con los valores "España", "Francia", "Italia" y "Alemania".
 // 2. Usa el método `shift` para eliminar el primer elemento del arreglo.
-
+const paises = ["España", "Francia", "Italia", "Alemania"];
+console.log(paises);
+paises.shift(1);
+console.log(paises);
 // Ejercicio 6: Agregar Elementos al Inicio
 // 1. Crea un arreglo llamado `ciudades` con los valores "Madrid" y "Barcelona".
 // 2. Usa el método `unshift` para agregar "Valencia" al inicio del arreglo.
-
+const ciudades = ["Madrid", "Barcelona"];
+ciudades.unshift("Valencia");
+console.log(ciudades);
 // Ejercicio 7: Combinar Arreglos
 // 1. Crea dos arreglos: `frutas1` con los valores "manzana" y "banana", y `frutas2` con los valores "cereza" y "uva".
 // 2. Usa el método `concat` para combinar ambos arreglos en uno nuevo llamado `todasLasFrutas`.
-
+const frutas1 = ["manzana", "banana"];
+const frutas2 = ["cereza", "uva"];
+const todasLasFrutas = frutas1.concat(frutas2);
+console.log(todasLasFrutas);
 // Ejercicio 8: Ordenar Elementos
 // 1. Crea un arreglo llamado `numeros` con los valores 3, 1, 4 y 2.
 // 2. Usa el método `sort` para ordenar los números en orden ascendente.
+const numeros2 = [3, -1, 4, -2, -9, 10, 15, 30];
+numeros2.sort((a, b) => console.log(a, b));
+numeros2.sort((a, b) => a - b);
 
+// console.log(numeros2);
 // Ejercicio 9: Invertir el Orden de los Elementos
 // 1. Crea un arreglo llamado `letras` con los valores "a", "b", "c" y "d".
 // 2. Usa el método `reverse` para invertir el orden de los elementos en el arreglo.
@@ -62,6 +82,7 @@ console.log(numeros);
 // Ejercicio 1: Filtrar Elementos
 // 1. Crea un arreglo llamado `numeros` con los valores 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
 // 2. Usa el método `filter` para crear un nuevo arreglo con solo los números pares.
+[1, 2, 3, 4, 5, 6].filter((ele) => ele % 2 == 0);
 
 // Ejercicio 2: Mapear Elementos
 // 1. Crea un arreglo llamado `numeros` con los valores 1, 2, 3, 4, 5.
